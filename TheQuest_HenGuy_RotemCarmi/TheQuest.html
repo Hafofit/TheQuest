@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Quest</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="TheQuest_HenGuy_RotemCarmi">
+                <img id="logo" src="index.png"/> <!--הלוגו של המשחק שלכם-->
+                <p id="logoTxt">The Quest</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul class="links">
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p class="aboutTxt">
+                אפיון ופיתוח: חן גיא ורותם כרמי
+                <br />
+                אופיין ופותח במסגרת פרויקט בקורסים:
+                <br />
+                סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1
+                <br />
+                תש"פ 2020
+                <br />
+                <br />
+                הפקולטה לטכנולוגיות למידה
+                <br />
+                <a href="https://www.hit.ac.il/"> המכון הטכנולוגי חולון</a>
+                <br />
+                <img id="hitlogo" src="hit.png" />
+                <br />
+
+                <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by brgfx - www.freepik.com</a>
+                <br />
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay closeAbout">X</a>
+            <p class="howtotxt">
+                במשך שנים , בצידו של ההר נמצאה פתח למנהרה שבמרוצת הזמן, רבים נכנסו דרכה ומעטים יצאו ממנה.
+                השמועה מספרה כי ישנה רוח החדה חידות בתוך המנהרה בצורת צפנים על הדלתות , עלייך לסדר את  
+                הצפנים בכול פתח דלת במנהרה – במידה ופצחת נכון – תתקרב יותר אל הסוד הגדול אותה מסתירה הרוח
+                הרחק מבני האנוש. במידה ולא – תשאר תקוע בחדר עם הרוח עד למענה נכון .
+                <br />
+                האם תצליח לגלות מהו הסוד?
+
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe"  src="TheQuest_HenGuy_RotemCarmi.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
